@@ -1,0 +1,10 @@
+
+%Problem 4E
+x3d = linspace(-10,10,100);
+y3d = linspace(-10,10,100);
+[XX,YY] = meshgrid(x3d,y3d);
+z1 = (-2/3*XX) + ((-1/3*sqrt(3))*YY) + (4/3);
+surf(XX,YY,z1); %Plotting 4E
+hold on
+z2 = (-2/3*XX) + ((-1/3*sqrt(3))*YY) + (8/3);
+surf(XX,YY,z2); %Plotting the other plane in 4E
